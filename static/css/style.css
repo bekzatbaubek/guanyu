@@ -1,0 +1,27 @@
+:root {
+  --text-color: #282828;
+}
+
+body {
+    font-family: Helvetica, sans-serif;
+    line-height: 1.4rem;
+    padding: 1rem;
+    max-width: 600px;
+    margin: auto;
+    color: var(--text-color);
+}
+
+a.site-title {
+  font-size: 20px;
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+hr {
+  border: none;
+  border-bottom: 2px solid var(--text-color);
+}
+
+main h1 {
+  text-align: center;
+}
