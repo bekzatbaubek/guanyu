@@ -1,14 +1,13 @@
 <header>
-    <p>
-        <a class="site-title" href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
-    </p>
+    <p><strong><a class="site-title" href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a></strong></p>
     <nav>
-        <ul>
-            {{ range .Site.Menus.main }}
-            <li>
-                <a href="{{ .URL }}">{{- .Name -}}</a>
-            </li>
-            {{ end }}
-        </ul>
+    <ul>
+        {{ range .Site.Menus.main }}
+        <li>
+            <a href="{{ .URL }}">{{- .Name -}}</a>
+        </li>
+        {{ end }}
+    </ul>
     </nav>
 </header>
+<hr>
