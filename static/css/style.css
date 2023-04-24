@@ -1,8 +1,8 @@
 :root {
-  --text-color: #282828;
-  --link-color: #0074D9;
-  --muted-color: #a2a2a2;
-  --visited-color: #B10DC9;
+    --text-color: #282828;
+    --link-color: #0074D9;
+    --muted-color: #a2a2a2;
+    --visited-color: #B10DC9;
 }
 
 body {
@@ -15,75 +15,75 @@ body {
 }
 
 main {
-  margin-bottom: 3rem;
+    margin-bottom: 3rem;
 }
 
 hr {
-  border: none;
-  border-bottom: 1px solid var(--muted-color);
+    border: none;
+    border-bottom: 1px solid var(--muted-color);
 }
 
 main h1 {
-  text-align: center;
+    text-align: center;
 }
 
 a {
-  color: var(--link-color);
-  text-decoration: none;
+    color: var(--link-color);
+    text-decoration: none;
 }
 
 a:hover {
-  color: var(--link-color);
-  text-decoration: underline;
+    color: var(--link-color);
+    text-decoration: underline;
 }
 
 main a:visited {
-  color: var(--visited-color);
+    color: var(--visited-color);
 }
 
-body > header  {
-  align-items: baseline;
-  display: flex;
-  font-size: 18px;
+body>header {
+    align-items: baseline;
+    display: flex;
+    font-size: 18px;
 }
 
-body > header a {
-  text-decoration: none;
-  color: var(--text-color);
+body>header a {
+    text-decoration: none;
+    color: var(--text-color);
 }
 
-body > header a:hover {
-  text-decoration: underline;
-  color: var(--text-color);
-}
-
-nav ul li {
-  display: inline;
-  margin-right: 0.5rem;
-}
-
-body > header  {
-  align-items: baseline;
-  display: flex;
-  font-size: 18px;
-}
-
-body > header a {
-  text-decoration: none;
-  color: var(--text-color);
-}
-
-body > header a:hover {
-  text-decoration: underline;
-  color: var(--text-color);
+body>header a:hover {
+    text-decoration: underline;
+    color: var(--text-color);
 }
 
 nav ul li {
-  display: inline;
-  margin-right: 1rem;
+    display: inline;
+    margin-right: 0.5rem;
+}
+
+body>header {
+    align-items: baseline;
+    display: flex;
+    font-size: 18px;
+}
+
+body>header a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+body>header a:hover {
+    text-decoration: underline;
+    color: var(--text-color);
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 1rem;
 }
 
 .pubdate {
-  font-family: monospace;
-  font-size: 1rem;
+    font-family: monospace;
+    font-size: 1rem;
 }
