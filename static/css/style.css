@@ -1,101 +1,87 @@
 :root {
-    --text-color: #282828;
-    --background-color: #ffffff;
-    --link-color: #0074D9;
-    --muted-color: #a2a2a2;
-    --visited-color: #B10DC9;
+    --text-color: #222222;
+    --text-muted-color: #414141;
+    --background-color: #fbfbfb;
+    --link-color: #00c3ff;
+    --visited-color: #7d42c5;
 }
 
-@media (prefers-color-scheme: dark) {
-    :root {
-        --text-color: #ffffff;
-        --background-color: #191919;
-        --link-color: #4dabfe;
-        --muted-color: #a2a2a2;
-        --visited-color: #b453c3;
-    }
+html {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 body {
-    font-family: Helvetica, sans-serif;
-    line-height: 1.4rem;
-    padding: 1rem;
-    max-width: 600px;
-    margin: auto;
     color: var(--text-color);
     background-color: var(--background-color);
 }
 
-main {
-    margin-bottom: 3rem;
-}
-
-hr {
-    border: none;
-    border-bottom: 1px solid var(--muted-color);
-}
-
-main h1 {
-    text-align: center;
+body > * {
+    max-width: 640px;
+    margin: auto;
+    padding: 0 1.2rem;
 }
 
 a {
-    color: var(--link-color);
     text-decoration: none;
+    color: var(--link-color);
 }
 
 a:hover {
-    color: var(--link-color);
     text-decoration: underline;
 }
 
-main a:visited {
+a:visited {
     color: var(--visited-color);
 }
 
-body>header {
-    align-items: baseline;
+nav > ul {
+    padding: 0;
     display: flex;
-    font-size: 18px;
+    gap: 20px;
 }
 
-body>header a {
-    text-decoration: none;
+nav > ul > li {
+    list-style: none;
+}
+
+nav > ul > li > a {
     color: var(--text-color);
 }
 
-body>header a:hover {
-    text-decoration: underline;
+nav > ul > li > a:visited {
     color: var(--text-color);
 }
 
-nav ul li {
-    display: inline;
-    margin-right: 0.5rem;
+h1, h2, h3, h4, h5, h6 {
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-body>header {
-    align-items: baseline;
-    display: flex;
-    font-size: 18px;
+h1 {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    text-align: center;
 }
 
-body>header a {
-    text-decoration: none;
-    color: var(--text-color);
+h2, h3, h4, h5, h6 {
+    margin-top: 1.8rem;
+    margin-bottom: 1.2rem;
 }
 
-body>header a:hover {
-    text-decoration: underline;
-    color: var(--text-color);
+p {
+    margin: 0;
+    line-height: 1.4;
+    margin-bottom: 1.6rem;
 }
 
-nav ul li {
-    display: inline;
-    margin-right: 1rem;
+header {
+    max-width: 960px;
 }
 
-.pubdate {
-    font-family: monospace;
-    font-size: 1rem;
+footer {
+    color: var(--text-muted-color);
+    text-align: center;
+    margin-top: 10rem;
 }
