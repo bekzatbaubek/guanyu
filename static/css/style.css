@@ -1,14 +1,39 @@
+@font-face {
+    font-family: "Noto Serif Regular";
+    src: local("Noto Serif Regular"), url("../fonts/NotoSerif-Regular.ttf") format("truetype");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Noto Serif Italic";
+    src: local("Noto Serif Italic"), url("../fonts/NotoSerif-Italic.ttf") format("truetype");
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Noto Serif Bold";
+    src: local("Noto Serif Bold"), url("../fonts/NotoSerif-Bold.ttf") format("truetype");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "Noto Serif BoldItalic";
+    src: local("Noto Serif BoldItalic"), url("../fonts/NotoSerif-BoldItalic.ttf") format("truetype");
+    font-weight: bold;
+    font-style: italic;
+}
+
 :root {
     --text-color: #222222;
     --text-muted-color: #414141;
-    --background-color: #fbfbfb;
-    --link-color: #00c3ff;
-    --visited-color: #7d42c5;
+    --background-color: #f9f9f9;
+    --link-color: #2b67ff;
+    --visited-color: #44157d;
 }
 
 html {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 20px;
+    font-family: 'Noto Serif', serif;
+    font-size: 18px;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -53,10 +78,6 @@ nav > ul > li > a {
 
 nav > ul > li > a:visited {
     color: var(--text-color);
-}
-
-h1, h2, h3, h4, h5, h6 {
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 h1 {
