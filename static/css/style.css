@@ -28,11 +28,11 @@
 }
 
 :root {
-    --text-color: #222222;
-    --text-muted-color: #414141;
-    --background-color: #f9f9f9;
+    --text-color: #f7f7f7;
+    --text-muted-color: #9a9a9a;
+    --background-color: #131313;
     --link-color: #2b67ff;
-    --visited-color: #44157d;
+    --visited-color: #fec9fe;
 }
 
 html {
