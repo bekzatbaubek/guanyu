@@ -2,18 +2,21 @@
     font-family: "Noto Serif";
     src: local("Noto Serif Regular"), url("../fonts/NotoSerif-Regular.ttf") format("truetype");
     font-weight: normal;
+    font-display: swap;
 }
 
 @font-face {
     font-family: "Noto Serif";
     src: local("Noto Serif Italic"), url("../fonts/NotoSerif-Italic.ttf") format("truetype");
     font-style: italic;
+    font-display: swap;
 }
 
 @font-face {
     font-family: "Noto Serif";
     src: local("Noto Serif Bold"), url("../fonts/NotoSerif-Bold.ttf") format("truetype");
     font-weight: bold;
+    font-display: swap;
 }
 
 @font-face {
@@ -21,6 +24,7 @@
     src: local("Noto Serif BoldItalic"), url("../fonts/NotoSerif-BoldItalic.ttf") format("truetype");
     font-weight: bold;
     font-style: italic;
+    font-display: swap;
 }
 
 :root {
