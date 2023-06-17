@@ -14,7 +14,7 @@
 
 <aside class="prev-next">
     {{ if .PrevInSection }}
-    <a class="prev-link" href="{{ .PrevInSection.Permalink }}">Previous: "{{.PrevInSection.Title}}"</a>
+    <a class="prev-link" href="{{ .PrevInSection.Permalink }}">Previous: {{.PrevInSection.Title}}</a>
     {{ end }}
     {{ if .NextInSection }}
     <a class="next-link" href="{{ .NextInSection.Permalink }}">Next: {{.NextInSection.Title}}</a>
