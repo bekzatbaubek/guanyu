@@ -108,5 +108,16 @@ header {
 footer {
     color: var(--text-muted-color);
     text-align: center;
-    margin-top: 10rem;
+    margin-top: 3rem;
+}
+
+.prev-next {
+    margin-top: 4rem;
+    display: flex;
+    gap: 3rem;
+}
+
+.next-link {
+    margin-left: auto;
+    word-wrap: break-word;
 }
