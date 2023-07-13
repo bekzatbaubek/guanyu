@@ -28,11 +28,20 @@
 }
 
 :root {
-    --text-color: #f7f7f7;
-    --text-muted-color: #9a9a9a;
-    --background-color: #131313;
-    --link-color: #5d89f8;
-    --visited-color: #cf3b9e;
+    --text-color: #151515;
+    --text-muted-color: #535353;
+    --background-color: #fefefe;
+    --link-color: #205fff;
+    --visited-color: #e70cff;
+}
+@media (prefers-color-scheme: dark) {
+    :root {
+        --text-color: #f7f7f7;
+        --text-muted-color: #9a9a9a;
+        --background-color: #131313;
+        --link-color: #5d89f8;
+        --visited-color: #ff00aa;
+    }
 }
 
 html {
