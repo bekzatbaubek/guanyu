@@ -1,105 +1,10 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="{{ .Summary }}">
     <meta name="keywords" content="{{ with .Params.tags }}{{ delimit . ", " }}{{ end }}">
     <link rel="canonical" href="{{ .Permalink }}">
-    <style>
-        :root {
-            --text-color: #000000;
-            --text-muted-color: #535353;
-            --background-color: #fefefe;
-            --link-color: #205fff;
-            --hover-color: #97cdff;
-            --visited-color: #950293;
-        }
-
-        @media (prefers-color-scheme: dark) {
-            :root {
-                --text-color: #fefefe;
-                --text-muted-color: #9a9a9a;
-                --background-color: #131313;
-                --link-color: #6e96fc;
-                --visited-color: #ff77b2;
-            }
-        }
-
-        html {
-            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-            font-size: 1.1rem;
-            line-height: 1.5;
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
-        }
-
-        body {
-            color: var(--text-color);
-            background-color: var(--background-color);
-            max-width: 740px;
-            margin: auto;
-            padding: 0 1.2rem;
-        }
-
-        h1,h2,h3 {
-            line-height: 1.1;
-            margin-top: 1.5em;
-        }
-
-        footer {
-            color: var(--text-muted-color);
-            margin-top: 3em;
-        }
-
-        footer,h1 {
-            text-align: center;
-        }
-
-        a {
-            text-decoration: none;
-            color: var(--link-color);
-            text-underline-offset: 0.2em;
-        }
-
-        a:hover {
-            text-decoration: underline;
-            color: var(--hover-color);
-            background-color: var(--hover-bg-color);
-        }
-
-        a:visited {
-            color: var(--visited-color);
-        }
-
-        nav>ul {
-            padding: 0;
-            display: flex;
-            gap: 20px;
-        }
-
-        nav>ul>li {
-            list-style: none;
-        }
-
-        nav>ul>li>a,nav>ul>li>a:visited {
-            color: var(--text-color);
-        }
-
-        .prev-next {
-            margin-top: 4rem;
-            display: flex;
-            gap: 3rem;
-        }
-
-        .next-link {
-            margin-left: auto;
-            word-wrap: break-word;
-        }
-
-        pre {
-            font-size: 0.85em;
-            padding: 1.5em;
-        }
-    </style>
+    <link rel="stylesheet" href="/css/style.css">
     <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Page.Title }} &mdash; {{ .Site.Title }} {{ end }}</title>
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
