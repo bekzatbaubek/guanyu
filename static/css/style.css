@@ -24,9 +24,9 @@ body {
     color: var(--text-color);
     background-color: var(--background-color);
     max-width: 650px;
-    margin: 40px auto;
+    margin: 1.5em auto;
     line-height: 1.6;
-    padding:0 10px;
+    padding: 0 1.5em;
 }
 
 h1,
