@@ -20,7 +20,8 @@
 
 body {
     font-family: var(--system-sans);
-    font-size: 1.1em;
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.2em;
     color: var(--text-color);
     background-color: var(--background-color);
     max-width: 650px;
@@ -33,15 +34,24 @@ h1,
 h2,
 h3 {
     line-height: 1.2;
+    font-weight: 400;
 }
 
 footer {
     color: var(--text-muted-color);
 }
 
-footer,
-h1 {
+footer {
     text-align: center;
+}
+
+h1 {
+    margin-bottom: 0.3em;
+}
+
+.article-date {
+    margin-top: 0.3em;
+    margin-bottom: 2em;
 }
 
 a {
@@ -87,6 +97,5 @@ nav>ul>li>a:visited {
 }
 
 pre {
-    font-size: 0.85em;
     padding: 1.5em;
 }
