@@ -38,6 +38,7 @@ h3 {
 }
 
 footer {
+    margin-top: 5em;
     color: var(--text-muted-color);
 }
 
@@ -92,10 +93,16 @@ nav>ul>li>a:visited {
 }
 
 .next-link {
+    text-align: right;
     margin-left: auto;
     word-wrap: break-word;
 }
 
+.highlight {
+    overflow: scroll;
+}
+
 pre {
+    overflow: scroll;
     padding: 1.5em;
 }
