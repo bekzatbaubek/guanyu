@@ -138,3 +138,7 @@ pre {
     overflow: scroll;
     padding: 1.5em;
 }
+
+code {
+    font-size: 1rem;
+}
