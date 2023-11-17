@@ -1,3 +1,37 @@
+@font-face {
+    font-family: "XCharter";
+    src:
+        local("Charter"),
+        url("../fonts/xcharter/XCharter-Roman.woff2");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "XCharter";
+    src:
+        local("Charter"),
+        url("../fonts/xcharter/XCharter-Bold.woff2");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "XCharter";
+    src:
+        local("Charter"),
+        url("../fonts/xcharter/XCharter-BoldItalic.woff2");
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "XCharter";
+    src:
+        local("Charter"),
+        url("../fonts/xcharter/XCharter-Italic.woff2");
+    font-weight: normal;
+    font-style: italic;
+}
+
 :root {
     --text-color: #0f0f0f;
     --text-muted-color: #535353;
@@ -19,9 +53,8 @@
 }
 
 body {
-    font-family: var(--system-sans);
-    font-family: Georgia, Times, 'Times New Roman', serif;
-    font-size: 1.2em;
+    font-family: XCharter, serif;
+    font-size: 1.2rem;
     color: var(--text-color);
     background-color: var(--background-color);
     max-width: 650px;
@@ -34,7 +67,6 @@ h1,
 h2,
 h3 {
     line-height: 1.2;
-    font-weight: 400;
 }
 
 footer {
