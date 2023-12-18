@@ -1,20 +1,16 @@
 {{ define "main" }}
-<header>
 <h1>{{ .Title }}</h1>
-</header>
 {{ .Content }}
 
-<section>
-    {{ range .Pages.GroupByDate "2006" }}
-    <h3>{{ .Key }}</h3>
-    <ul>
-        {{ range .Pages }}
-        <li>
-            <time class="pubdate" datetime='{{ .PublishDate.Format "2006-01-02T15:04:05Z07:00" }}'>{{ .PublishDate.Format "2 January" }}</time>  &ndash; <a href="{{ .Permalink }}"> {{ .Title }}</a>
-        </li>
-        {{ end }}
-    </ul>
+{{ range .Pages.GroupByDate "2006" }}
+<h2>{{ .Key }}</h2>
+<ul>
+    {{ range .Pages }}
+    <li>
+        <time class="pubdate" datetime='{{ .PublishDate.Format "2006-01-02T15:04:05Z07:00" }}'>{{ .PublishDate.Format "2 January" }}</time>  &ndash; <a href="{{ .Permalink }}"> {{ .Title }}</a>
+    </li>
     {{ end }}
-</section>
+</ul>
+{{ end }}
 
 {{ end }}
