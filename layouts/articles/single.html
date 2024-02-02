@@ -1,10 +1,21 @@
 {{ define "main" }}
 <h1>{{ .Title }}</h1>
-<p class="article-date">
-    <em>
-        <time datetime='{{ .PublishDate.Format "2006-01-02T15:04:05Z07:00" }}'>{{ .PublishDate.Format "January 02, 2006" }}</time>
-    </em>
-</p>
+
+<section class="article-meta" aria-label="Article metadata">
+    <p class="article-date">
+        <em>
+            <time datetime='{{ .PublishDate.Format "2006-01-02T15:04:05Z07:00" }}'>{{ .PublishDate.Format "January 02, 2006" }}</time>
+        </em>
+    </p>
+    {{ with .GetTerms "tags" }}
+    <ul class="article-tags">
+      {{ range . }}
+        <li><a href="{{ .RelPermalink }}"><small>#{{ .LinkTitle }}</small></a></li>
+      {{ end }}
+    </ul>
+    {{ end }}
+</section>
+
 {{ .Content }}
 
 <aside class="prev-next">

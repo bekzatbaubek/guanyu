@@ -19,7 +19,7 @@
 }
 
 body {
-    font-family:  'Charter', Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Charter', Georgia, 'Times New Roman', Times, serif;
     font-size: 1.2rem;
     color: var(--text-color);
     background-color: var(--background-color);
@@ -48,9 +48,13 @@ h1 {
     margin-bottom: 0.3em;
 }
 
-.article-date {
-    margin-top: 0.3em;
-    margin-bottom: 2em;
+.article-meta>* {
+    margin-block: 0.5em;
+}
+
+.article-meta {
+    margin-block-start: 1em;
+    margin-block-end: 2em;
 }
 
 a {
@@ -77,6 +81,21 @@ nav>ul {
 
 nav>ul>li {
     list-style: none;
+}
+
+.article-tags {
+    padding: 0;
+    display: flex;
+    gap: 5px;
+}
+
+.article-tags>li {
+    list-style: none;
+}
+
+.article-tags>li>a,
+.article-tags>li>a:visited {
+    color: var(--link-color);
 }
 
 nav>ul>li>a,
