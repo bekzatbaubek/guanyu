@@ -12,6 +12,7 @@
     font-family: XCharter;
     src: 
         local("XCharter"), url("/fonts/XCharter/xcharter-roman-webfont.woff2"), url("/fonts/XCharter/xcharter-roman-webfont.woff");
+    font-display: swap;
 }
 
 @font-face {
@@ -20,6 +21,7 @@
         local("XCharter"), url("/fonts/XCharter/xcharter-italic-webfont.woff2"), url("/fonts/XCharter/xcharter-italic-webfont.woff");
     font-weight: normal;
     font-style: italic;
+    font-display: swap;
 }
 
 @font-face {
@@ -28,6 +30,7 @@
         local("XCharter"), url("/fonts/XCharter/xcharter-bold-webfont.woff2"), url("/fonts/XCharter/xcharter-bold-webfont.woff");
     font-weight: bold;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -36,6 +39,7 @@
         local("XCharter"), url("/fonts/XCharter/xcharter-bolditalic-webfont.woff2"), url("/fonts/XCharter/xcharter-bolditalic-webfont.woff");
     font-weight: bold;
     font-style: italic;
+    font-display: swap;
 }
 
 @media (prefers-color-scheme: dark) {
