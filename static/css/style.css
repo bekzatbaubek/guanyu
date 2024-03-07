@@ -49,7 +49,7 @@
 }
 
 body {
-    font-family: "XCharter", "Charter", "Georgia", serif;
+    font-family:  "Charter", "XCharter", "Georgia", serif;
     font-size: 1.2rem;
     color: var(--text-color);
     background-color: var(--background-color);
