@@ -1,7 +1,7 @@
 name = "Guan Yu"
 license = "MIT"
 licenselink = "https://github.com/bekzatbaubek/guanyu/blob/master/LICENSE"
-description = ""
+description = "Simple one-column theme aimed at replicated the look and feel of a paper article."
 homepage = "http://example.com/"
 tags = ["blog", "personal"]
 features = []
