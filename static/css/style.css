@@ -69,6 +69,19 @@ h3 {
     line-height: 1.2;
 }
 
+figure {
+    margin: 0;
+    padding: 0.5em;
+}
+
+img {
+    max-width: 100%;
+}
+
+figcaption {
+    text-align: center;
+}
+
 footer {
     margin-top: 5em;
     color: var(--text-muted-color);
