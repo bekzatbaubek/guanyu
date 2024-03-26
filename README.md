@@ -9,5 +9,3 @@ git submodule add https://github.com/bekzatbaubek/guanyu.git
 
 echo "theme = 'guanyu'" >> hugo.toml
 ```
-
-Fonts used: XCharter (converted to WOFF) [License](/static/fonts/XCharter/README)
