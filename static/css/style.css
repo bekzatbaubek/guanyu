@@ -1,5 +1,6 @@
 :root {
     --text-color: #0f0f0f;
+    --text-secondary-color: #313131;
     --text-muted-color: #535353;
     --background-color: #fefefe;
     --link-color: #205fff;
@@ -45,6 +46,7 @@
 @media (prefers-color-scheme: dark) {
     :root {
         --text-color: #fefefe;
+        --text-secondary-color: #d4d4d4;
         --text-muted-color: #9a9a9a;
         --background-color: #1d1d1d;
         --link-color: #6e96fc;
@@ -54,10 +56,10 @@
 
 body {
     font-family:  "Charter", "XCharter", "Georgia", serif;
-    font-size: 1.2rem;
+    font-size: 18px;
     color: var(--text-color);
     background-color: var(--background-color);
-    max-width: 650px;
+    max-width: 600px;
     margin: 1.2em auto;
     line-height: 1.6;
     padding: 0 1em;
@@ -93,6 +95,10 @@ footer {
 
 h1 {
     margin-bottom: 0.3em;
+}
+
+.pubdate {
+    color: var(--text-secondary-color);
 }
 
 .article-meta>* {
