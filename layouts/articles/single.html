@@ -26,4 +26,23 @@
     <a class="next-link" href="{{ .NextInSection.Permalink }}">Next: {{.NextInSection.Title}}</a>
     {{ end }}
 </aside>
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": {{ .Permalink }}
+    },
+    "headline": "{{ .Title }}",
+    "author": {
+      "@type": "Person",
+      "name": {{ .Site.Params.Author.Name }},
+      "url": {{ .Site.Params.Author.URL }}
+    },
+    "datePublished": {{ .PublishDate.Format "2006-01-02" }}
+  }
+</script>
+
 {{ end }}
