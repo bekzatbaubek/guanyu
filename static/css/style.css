@@ -22,7 +22,7 @@
 
 body {
     font-family: var(--system-sans);
-    font-size: 18px;
+    font-size: 16px;
     color: var(--text-color);
     background-color: var(--background-color);
     max-width: 600px;
