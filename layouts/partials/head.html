@@ -4,7 +4,156 @@
     <meta name="description" content="{{ .Summary }}">
     <meta name="keywords" content="{{ with .Params.tags }}{{ delimit . ", " }}{{ end }}">
     <link rel="canonical" href="{{ .Permalink }}">
-    <link rel="stylesheet" href="/css/style.css">
+    <style>
+        :root {
+            --text-color: #0f0f0f;
+            --text-secondary-color: #313131;
+            --text-muted-color: #535353;
+            --background-color: #fefefe;
+            --link-color: #205fff;
+            --hover-color: #97cdff;
+            --visited-color: #950293;
+            --system-sans: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --text-color: #fefefe;
+                --text-secondary-color: #d4d4d4;
+                --text-muted-color: #9a9a9a;
+                --background-color: #101010;
+                --link-color: #6e96fc;
+                --visited-color: #ff77b2;
+            }
+        }
+
+        body {
+            font-family: var(--system-sans);
+            font-size: 16px;
+            color: var(--text-color);
+            background-color: var(--background-color);
+            max-width: 600px;
+            margin: 1.2em auto;
+            line-height: 1.6;
+            padding: 0 1em;
+        }
+
+        h1,
+        h2,
+        h3 {
+            line-height: 1.2;
+        }
+
+        figure {
+            margin: 0;
+            padding: 0.5em;
+        }
+
+        img {
+            max-width: 100%;
+        }
+
+        figcaption {
+            text-align: center;
+        }
+
+        footer {
+            margin-top: 5em;
+            color: var(--text-muted-color);
+        }
+
+        footer {
+            text-align: center;
+        }
+
+        h1 {
+            margin-bottom: 0.3em;
+        }
+
+        .pubdate {
+            color: var(--text-secondary-color);
+        }
+
+        .article-meta>* {
+            margin-block: 0.5em;
+        }
+
+        .article-meta {
+            margin-block-start: 1em;
+            margin-block-end: 2em;
+        }
+
+        a {
+            text-decoration: none;
+            color: var(--link-color);
+            text-underline-offset: 0.2em;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: var(--hover-color);
+            background-color: var(--hover-bg-color);
+        }
+
+        a:visited {
+            color: var(--visited-color);
+        }
+
+        nav>ul {
+            padding: 0;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav>ul>li {
+            list-style: none;
+        }
+
+        .article-tags {
+            padding: 0;
+            display: flex;
+            gap: 5px;
+        }
+
+        .article-tags>li {
+            list-style: none;
+        }
+
+        .article-tags>li>a,
+        .article-tags>li>a:visited {
+            color: var(--link-color);
+        }
+
+        nav>ul>li>a,
+        nav>ul>li>a:visited {
+            color: var(--text-color);
+        }
+
+        .prev-next {
+            margin-top: 6rem;
+            display: flex;
+            gap: 3rem;
+        }
+
+        .next-link {
+            text-align: right;
+            margin-left: auto;
+            word-wrap: break-word;
+        }
+
+        .highlight {
+            overflow: scroll;
+        }
+
+        pre {
+            overflow: scroll;
+            padding: 1.5em;
+        }
+
+        code {
+            font-size: 1rem;
+        }
+    </style>
     <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Page.Title }} &mdash; {{ .Site.Title }} {{ end }}</title>
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
